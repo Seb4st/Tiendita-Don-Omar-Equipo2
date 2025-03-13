@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #ff9966;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.productos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.producto {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+
+
+.producto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.producto input {
+    width: 100px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.acciones {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-finalizar {
+    background: linear-gradient(to right, #ff4e50, #fc913a);
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    width: 220px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-finalizar:hover {
+    background: linear-gradient(to right, #fc913a, #ff4e50);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-volver {
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    width: 200px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.btn-volver:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    color: #222;
+}

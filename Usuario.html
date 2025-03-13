@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="css/Usuario.css">
+    <script>
+        function mostrarMensaje() {
+            alert("¡Pedido exitoso!");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="productos-container">
+        <h1>Ingreso nuevo usuario</h1>
+        <form id="Registrar">
+        <div class="productos-grid">
+            
+                <div class="fondo input">
+                    <h2>
+                    <label for="">Nombre</label>
+                    </h2>
+                    <input type="text" name="Nombre" id="Nombre" required>
+                    <h2>
+                    <label for="">Correo electronico</label>
+                    </h2>
+                    <input type="email" name="Email" id="Email" required>
+                    <h2>
+                    <label for="">Fecha</label>
+                    </h2>
+                    <input type="date" name="Fecha" id="Fecha" required>
+                    <h2>
+                    <label for="">Contraseña</label>
+                    </h2>
+                    <input type="text" name="Contrasena" id="Contrasena" required>
+                    <h2>
+                    <label for="">Confirmar contraseña</label>
+                    </h2>
+                    <input type="text" name="Confirmar_contrasena" id="Confirmar_contrasena" required><br><br>
+                    <input type="submit" value="Enviar formulario">
+                    <br><br><a href="Bienvenida.html" class="btn-volver">Volver al Menú</a>
+                </div>
+        </div>
+    </form>
+    </div>
+    <div id="Popup" class="Popup">Se registro correctamente</div>
+    <div id="Popup3" class="Popup3">La contraseña no coincide</div>
+    <script src="js/Pop-up.js"></script>
+</body>
+</html>
