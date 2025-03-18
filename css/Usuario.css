@@ -93,3 +93,11 @@ h1 {
     transform: scale(1.05);
     color: #222;
 }
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 175px;
+    margin-bottom: 20px;
+}
