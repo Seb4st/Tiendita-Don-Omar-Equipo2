@@ -4,7 +4,7 @@ document.getElementById('Login').addEventListener('submit',function(event){
     const Password= document.getElementById('Password').value;
     if(Password== 'Admin' && Usuario=='Admin')
     {
-        location.href="http://localhost/Tiendita%20Don%20Omar/Bienvenida.html"
+        location.href="Bienvenida.html"
     }
     else
     {
